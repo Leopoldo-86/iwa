@@ -1,22 +1,23 @@
-<!--
-   @author mikhail-cct - https://github.com/mikhail-cct/CA1-In-class-Demo
+<!-- @Reference mikhail-cct - https://github.com/mikhail-cct/CA1-In-class-Demo 
+ @author Leopoldo Medeiros - https://github.com/Leopoldo-86/iwa 
 -->
 
 <?xml version="1.0"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
     <xsl:template match="/">
-        <table id="catalog" class="indent">
+        <table id="menuTable" class="indent">
             <thead>
                 <tr>
-                    <th colspan="3">Catalog CDs</th>
+                    <th colspan="3">Catolog CDs Heavy Melody Store</th>
                 </tr>
                 <tr>
-                    <th>Title</th>
+                    <th>*</th>
                     <th>Artist</th>
+                    <th>Album</th>
                     <th>Country</th>
-                    <th>Record_Company</th>
-                    <th>Price</th>
+                    <th>Company</th>
                     <th>Year</th>
+                    <th>Price</th>
                 </tr>
             </thead>
             <tbody>
@@ -26,10 +27,10 @@
                             <input name="item0" type="checkbox" />
                         </td>
                         <td>
-                            <xsl:value-of select="TITLE" />
+                            <xsl:value-of select="ARTIST" />
                         </td>
                         <td align="right">
-                            <xsl:value-of select="ARTIST" />
+                            <xsl:value-of select="TITLE" />
                         </td>
                         <td align="right">
                             <xsl:value-of select="COUNTRY" />
@@ -38,10 +39,10 @@
                             <xsl:value-of select="COMPANY" />
                         </td>
                         <td align="right">
-                            <xsl:value-of select="PRICE" />
+                            <xsl:value-of select="YEAR" />
                         </td>
                         <td align="right">
-                            <xsl:value-of select="YEAR" />
+                            <xsl:value-of select="PRICE" />
                         </td>
                     </tr>
                 </xsl:for-each>
