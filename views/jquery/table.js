@@ -24,13 +24,13 @@ function select_row()
 	{
 		$(".selected").removeClass("selected");
 		$(this).addClass("selected");
-		var section = $(this).prevAll("tr").children("td[colspan='3']").length - 1;
-		var entree = $(this).attr("id") - 1;
-		delete_row(section, entree);
+		var catalog = $(this).prevAll("tr").children("td[colspan='3']").length - 1;
+		var cd = $(this).attr("id") - 1;
+		delete_row(catalog, cd);
 	})
 };
 
-function delete_row(sec, ent)
+function delete_row(cat, cd)
 {
 	$("#delete").click(function ()
 	{
@@ -40,8 +40,8 @@ function delete_row(sec, ent)
 			type: "POST",
 			data:
 			{
-				section: sec,
-				entree: ent
+				catalog: cat,
+				cd: cd
 			},
 			cache: false,
 			success: setTimeout(draw_table, 1000)
