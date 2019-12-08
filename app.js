@@ -59,14 +59,13 @@ router.get('/get/html', function(req, res) {
 
 // POST request to add to JSON & XML files
 router.post('/post/json', function(req, res) {
-
   // Function to read in a JSON file, add to it & convert to XML
   function appendJSON(obj) {
     // Function to read in XML file, convert it to JSON, add a new object and write back to XML file
     xmlFileToJs('catalog.xml', function(err, result) {
       if (err) throw (err);
       //This is where you pass on information from the form inside index.html in a form of JSON and navigate through our JSON (XML) file to create a new entree object
-      result.cafemenu.section[obj.sec_n].entree.push({'item': obj.item, 'price': obj.price}); //If your XML elements are differet, this is where you have to change to your own element names
+      result.CATALOG.CD.push({'TITLE': obj.TITLE, 'ARTIST': obj.ARTIST, 'COUNTRY': obj.COUNTRY, 'COMPANY': obj.COMPANY, 'PRICE': obj.PRICE, 'YEAR': obj.YEAR}); //If your XML elements are differet, this is where you have to change to your own element names
       //Converting back to our original XML file from JSON
       jsToXmlFile('catalog.xml', result, function(err) {
         if (err) console.log(err);

@@ -53,19 +53,22 @@
 			<div class="col-lg-4 text-center order-2">
 				<form enctype="application/json" action="/post/json" method="post">
 					<div class="form-group">
-						<select class="form-control" name="sec_n">
-							<option value="1">CD</option>
-							<option value="2">DVD</option>
-							<option value="3">BlueRay</option>
-                            <option value="3">Boxset</option>
-                            <option value="3">Collection</option>
-						</select>
+						<input class="form-control" type="text" name="TITLE" placeholder="Title">
 					</div>
 					<div class="form-group">
-						<input class="form-control" type="text" name="Artist" placeholder="Artist">
+						<input class="form-control" type="text" name="ARTIST" placeholder="Artist">
 					</div>
-					<div class="form-group">
-						<input class="form-control" type="text" name="Album" placeholder="Country">
+                    <div class="form-group">
+						<input class="form-control" type="text" name="COUNTRY" placeholder="Country">
+					</div>
+                    <div class="form-group">
+						<input class="form-control" type="text" name="COMPANY" placeholder="Company">
+					</div>
+                    <div class="form-group">
+						<input class="form-control" type="text" name="PRICE" placeholder="Price">
+					</div>
+                    <div class="form-group">
+						<input class="form-control" type="text" name="YEAR" placeholder="Year">
 					</div>
 					<button type="submit" class="btn btn-primary btn-block">Submit</button>
 				</form>
