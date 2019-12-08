@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+# iwa
+
+>>>>>>> 88b316f69674493a81d91be3b99af00f776b592a
 # Interactive Web Application (BSc in IT, Group A & B) 2019 – CCT<br/>[![CCT](https://www.cct.ie/wp-content/themes/hdcct/img/atoms/logo.jpg)](http://cct.ie)
 
 Interactive Web Applications - Continuous Assessment 1
@@ -58,4 +63,8 @@ will not be marked.
 clarified directly with your lecturer.
 
 • A grading rubric for each of the grade items is outlined below. Please use this as a guide for the
+<<<<<<< HEAD
 development of this project.
+=======
+development of this project.
+>>>>>>> 88b316f69674493a81d91be3b99af00f776b592a
