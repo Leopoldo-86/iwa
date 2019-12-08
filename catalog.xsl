@@ -1,13 +1,12 @@
 <!-- @Reference mikhail-cct - https://github.com/mikhail-cct/CA1-In-class-Demo 
  @author Leopoldo Medeiros - https://github.com/Leopoldo-86/iwa 
 -->
-<?xml version="1.0"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
     <xsl:template match="/">
         <table id="menuTable" class="indent">
             <thead>
                 <tr>
-                    <th colspan="3">Catolog CDs Heavy Melody Store</th>
+                    <th colspan="7">Catolog CDs Heavy Melody Store</th>
                 </tr>
                 <tr>
                     <th>*</th>
