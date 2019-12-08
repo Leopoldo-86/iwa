@@ -1,3 +1,7 @@
+<!--
+   @author mikhail-cct - https://github.com/mikhail-cct/CA1-In-class-Demo
+-->
+
 <?xml version="1.0"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
     <xsl:template match="/">
@@ -10,7 +14,7 @@
                     <th>Title</th>
                     <th>Artist</th>
                     <th>Country</th>
-                    <th>Company</th>
+                    <th>Record_Company</th>
                     <th>Price</th>
                     <th>Year</th>
                 </tr>
